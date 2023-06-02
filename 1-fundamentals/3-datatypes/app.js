@@ -38,3 +38,10 @@ let randomBigInteger = Math.floor(Math.random()*(MAX_BIGINT - MIN_BIGINT));
 console.log(`
     Random Big Integer : ${randomBigInteger}
 `);
+
+// String
+let greeting = "Hello";
+let phrase = 'Single quotes are ok too.';
+let embedString = `Can embed another string: ${greeting.toLowerCase()}`;
+
+console.log("\n",greeting,"\n",phrase,"\n",embedString);
