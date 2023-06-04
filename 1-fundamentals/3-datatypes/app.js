@@ -16,13 +16,13 @@ let radius = Math.floor( randomFactor*10 >=5 ? 10*randomFactor:5+10*randomFactor
 
 // Improve Math.round
 let _round = Math.round;
-// Math.round = (number, decimals)=>{
-//     if (arguments.length === 1){
-//         return _round(number);
-//     }
-//     let times = Math.pow(10, decimals);
-//     return _round(number*times)/times;
-// }
+Math.round = (number, decimals)=>{
+    if (arguments.length === 1){
+        return _round(number);
+    }
+    let times = Math.pow(10, decimals);
+    return _round(number*times)/times;
+}
 
 let circleArea =   Math.round(PI * radius * radius,2).toString().replace('.',',');
 console.log(`
@@ -46,7 +46,7 @@ let embedString = `Can embed another string: ${greeting.toLowerCase()}`;
 
 console.log("\n",greeting,"\n",phrase,"\n",embedString);
 
-// // Boolean
+// Boolean
 let age = prompt('Put your age: ',18);
 let message = Number.parseInt(age) >= 18 ? "You are the adult.":"Your are a" +
     " teenager.";
@@ -59,4 +59,9 @@ if(is_admin){
     console.log("You doesn't");
 }
 
+// null
+const myAge = null;
 
+if(myAge == null){
+    console.log("my age has not value;")
+}
