@@ -46,22 +46,24 @@ let embedString = `Can embed another string: ${greeting.toLowerCase()}`;
 
 console.log("\n",greeting,"\n",phrase,"\n",embedString);
 
-// Boolean
-let age = prompt('Put your age: ',18);
-let message = Number.parseInt(age) >= 18 ? "You are the adult.":"Your are a" +
-    " teenager.";
-window.alert(message);
-
-const is_admin = true;
-if(is_admin){
-    console.log("You might be an administrator");
-}else {
-    console.log("You doesn't");
+/*
+* Boolean
+*   true or false
+* */
+const currentUser = {
+    id:Symbol("abc"),
+    name:"Bernard Konan",
+    username:"bkonan".toUpperCase(),
+    email:"bkonan@cntig.net",
+    isConnected:false
 }
-
-// null
-const myAge = null;
-
-if(myAge == null){
-    console.log("my age has not value;")
+if(currentUser.isConnected){
+    console.log(`${currentUser.username} is online.`);
+    currentUser.credentials = {
+        cookieId: new Date(),
+        connectionTime:Date.now(),
+    }
+    console.log(currentUser)
+}else if(currentUser.isConnected === false){
+    console.log(`${currentUser.username} is not connected.\nPlease Sign In!`)
 }
