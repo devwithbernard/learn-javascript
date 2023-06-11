@@ -55,7 +55,7 @@ const currentUser = {
     name:"Bernard Konan",
     username:"bkonan".toUpperCase(),
     email:"bkonan@cntig.net",
-    isConnected:false
+    isConnected:false,
 }
 if(currentUser.isConnected){
     console.log(`${currentUser.username} is online.`);
@@ -65,5 +65,19 @@ if(currentUser.isConnected){
     }
     console.log(currentUser)
 }else if(currentUser.isConnected === false){
-    console.log(`${currentUser.username} is not connected.\nPlease Sign In!`)
+    console.log(`${currentUser.username} is not connected.\nPlease Sign In!`);
 }
+
+/*
+* null : means nothing, empty
+* */
+
+let users = null;
+
+async function fetchUsers(url){
+    const response = await fetch(url);
+    return response.json();
+}
+console.log('before assign users variable a new value : ', users)
+users = fetchUsers("https://jsonplaceholder.typicode.com/users");
+console.log('After assign users variable a new value: ',users)
