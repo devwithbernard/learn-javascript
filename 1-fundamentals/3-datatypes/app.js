@@ -81,3 +81,7 @@ async function fetchUsers(url){
 console.log('before assign users variable a new value : ', users)
 users = fetchUsers("https://jsonplaceholder.typicode.com/users");
 console.log('After assign users variable a new value: ',users)
+
+// undefined : not assigned value for a variable
+let user;
+console.log(user);
