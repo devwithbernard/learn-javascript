@@ -67,4 +67,5 @@ console.log(exponentiation(10,3));
 let counter = 1;
 counter++;
 console.log(counter);
-
+counter--;
+console.log(counter);
