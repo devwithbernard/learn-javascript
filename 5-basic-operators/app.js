@@ -62,3 +62,9 @@ function exponentiation(number, exponent){
     return number**exponent;
 }
 console.log(exponentiation(10,3));
+
+// Decrementation, incrementation
+let counter = 1;
+counter++;
+console.log(counter);
+
