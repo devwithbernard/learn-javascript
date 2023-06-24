@@ -1,0 +1,50 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+.main{
+    display: grid;
+    place-content: center;
+}
+
+.main h1{
+    color: darkviolet;
+    text-align: center;
+}
+
+hr{
+    height: 2px;
+    width: 70%;
+    border: none;
+    background-color: black;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.question{
+    border: 2px solid darkviolet;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 100%;
+    width: 30rem;
+}
+
+button{
+    padding: 5px 10px;
+    border: 1px solid darkviolet;
+    background-color: darkviolet;
+    color: white;
+    font-size: 1rem;
+}
+
+
+form select{
+    width: 50%;
+    padding: 5px;
+}
