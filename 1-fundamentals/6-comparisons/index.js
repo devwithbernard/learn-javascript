@@ -54,4 +54,10 @@ function compareStrings(str1, str2){
     }
 }
 
-console.log(compareStrings('Glae','Glee'))
+console.log(compareStrings('Glae','Glee'));
+
+// Comparison of different types
+console.log('2' > 1); // true
+console.log('01' == 1); // true
+console.log(true == 1); // true
+console.log(false == 0); // true
