@@ -61,3 +61,8 @@ console.log('2' > 1); // true
 console.log('01' == 1); // true
 console.log(true == 1); // true
 console.log(false == 0); // true
+
+// null and undefined comparison
+
+console.log(undefined == null); // true
+console.log(undefined === null); // false
