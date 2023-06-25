@@ -24,5 +24,18 @@ let nickName = "Bernoush";
 let username = firstName || lastName || nickName || "Anonymous";
 console.log(username);
 
+// And operator:
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+(function (){
+    let hour = 12;
+    let minute = 30;
+    if(hour === 12 && minute === 30){
+        console.log(`Time 12:30`)
+    }
+})()
 
 
