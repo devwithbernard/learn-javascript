@@ -42,4 +42,19 @@ modifyExternalVariable();
 
 console.log(userName); // variable has been modified in modifyExternalVariable function
 
+// Parameters
+function message(text, name) {
+    if (name === undefined) {
+        name = 'Bob';
+    }
+    text = `*${name}*:` + text;
+    console.log(text);
+}
 
+message('welcome', 'Ann')
+
+function showCount(counter) {
+    console.log(counter ?? 'unknown'); // if 'counter' is undefined or null
+}
+
+showCount(10);
