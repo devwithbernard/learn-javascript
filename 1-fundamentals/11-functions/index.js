@@ -58,3 +58,23 @@ function showCount(counter) {
 }
 
 showCount(10);
+
+// Return value
+function sum(a, b) {
+    return a + b;
+}
+
+console.log(sum(10, 15));
+
+function checkAge(age) {
+    if (age === undefined) return 'unknown';
+    if (age < 18) return 'Do you have the permission of your parents';
+    return true;
+}
+
+let age = 17;
+if (checkAge(age)) {
+    console.log("Access granted");
+} else {
+    console.log("Access denied");
+}
