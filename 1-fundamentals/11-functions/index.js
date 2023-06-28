@@ -22,4 +22,24 @@ function alertMessage() {
 
 alertMessage();
 
+// Global variable
+let userName = "Lee";
+
+function welcomeMessage() {
+    let message = "Welcome " + userName + "on my website."
+    console.log(message);
+}
+
+welcomeMessage();
+
+function modifyExternalVariable() {
+    userName = 'Bob';
+    let message = 'Hello, ' + userName;
+    console.log(message);
+}
+
+modifyExternalVariable();
+
+console.log(userName); // variable has been modified in modifyExternalVariable function
+
 
