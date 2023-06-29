@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+        }
+
+        .container {
+            max-width: 70%;
+            margin-inline: auto;
+        }
+
+        #search {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            padding: 10px 1rem;
+            margin: 1rem 0;
+            margin-inline: auto;
+        }
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .post {
+            background: lightblue;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .post-title {
+            color: darkblue;
+            display: block;
+        }
+
+        .post-body {
+            color: black;
+        }
+    </style>
+    <title>Objects in javascript</title>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="posts">
+        </div>
+    </div>
+</main>
+<script defer src="./index.js"></script>
+</body>
+</html>
