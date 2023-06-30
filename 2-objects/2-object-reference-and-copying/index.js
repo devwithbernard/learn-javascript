@@ -31,3 +31,13 @@ user.isAdmin = true;
 console.log("New User: ", user);
 console.log("New Student", student);
 
+// Comparison by reference
+let object1 = {};
+let objectCopy = object1;
+
+console.log(object1 === objectCopy); // the two variables pointing at the same reference
+
+let a = {};
+let b = {};
+
+console.log(a === b); // False : they don't point at the same reference;
