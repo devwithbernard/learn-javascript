@@ -102,3 +102,16 @@ console.log(randomPhrase.substr(3, 14));
 
 console.log(randomPhrase.slice(3, 10));
 
+// String comparison : localCompare
+let str1 = "Hello, world";
+let str2 = "Widget in id";
+
+console.log(str2.localeCompare(str1));
+
+if (str1.localeCompare(str2) === 0) {
+    console.log("strings are equals.");
+} else if (str1.localeCompare(str2) > 0) {
+    console.log(`'${str1}' is great than '${str2}'`);
+} else {
+    console.log(`'${str2}' is great than '${str1}'`);
+}
