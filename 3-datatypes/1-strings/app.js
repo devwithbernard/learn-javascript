@@ -44,3 +44,44 @@ const capitalize = sentence => {
 }
 
 console.log(capitalize("hello world!"));
+
+// Searching for a substring
+// str.indexOf
+let string = "Widget with id";
+let substring = "widget";
+
+let isFound = string.toUpperCase().indexOf(substring.toUpperCase(), 0);
+console.log(isFound);
+if (isFound === -1) {
+    console.log(`'${substring}' is not in '${string}'.`)
+} else {
+    console.log(`'${substring}' is in '${string}'.`)
+}
+
+substring = 'id';
+console.log(string.indexOf(substring, 2));
+
+// Searching all occurrences of a substring
+let str = 'As sly as a fox, as strong as an ox';
+let substr = 'as';
+
+let occurrencePositions = [];
+let position = 0;
+
+while (true) {
+    let positionFound = str.toUpperCase().indexOf(substr.toUpperCase(), position);
+    if (positionFound === -1) break;
+    occurrencePositions.push(positionFound);
+    position += positionFound + 1;
+}
+
+console.log(occurrencePositions);
+
+// or
+let occurrences = [];
+let pos = -1;
+while ((pos = str.toUpperCase().indexOf(substr.toUpperCase(), pos + 1)) != -1) {
+    occurrences.push(pos);
+}
+console.log(occurrences);
+
