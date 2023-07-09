@@ -93,3 +93,12 @@ console.log(isInOtherStr);
 console.log(otherStr.toUpperCase().startsWith("wi".toUpperCase()));
 
 console.log(otherStr.toUpperCase().endsWith("id".toUpperCase()));
+
+// Getting a substring : substring, substr, slice methods
+let randomPhrase = "My dentist tells me that chewing bricks is very bad for your teeth.";
+console.log(randomPhrase.substring(3, 10));
+
+console.log(randomPhrase.substr(3, 14));
+
+console.log(randomPhrase.slice(3, 10));
+
