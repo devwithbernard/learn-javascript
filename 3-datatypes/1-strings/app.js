@@ -85,3 +85,11 @@ while ((pos = str.toUpperCase().indexOf(substr.toUpperCase(), pos + 1)) != -1) {
 }
 console.log(occurrences);
 
+// includes, startsWith, endsWith
+let otherStr = "Widget contains id";
+let isInOtherStr = otherStr.includes('id');
+console.log(isInOtherStr);
+
+console.log(otherStr.toUpperCase().startsWith("wi".toUpperCase()));
+
+console.log(otherStr.toUpperCase().endsWith("id".toUpperCase()));
