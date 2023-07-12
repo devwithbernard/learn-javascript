@@ -49,7 +49,7 @@ console.log(nums.includes(4));
 
 const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-setInterval(() => {
+/*setInterval(() => {
     let min = Math.min(...nums);
     let max = Math.max(...nums);
     let randomInt = randomNumber(min, max);
@@ -59,5 +59,21 @@ setInterval(() => {
     } else {
         console.log("Oops!!! Not in.");
     }
-}, 2000);
+}, 2000);*/
+
+// array.find
+let usersCopy = [
+    {id: 1, name: "John"},
+    {id: 2, name: "Pete"},
+    {id: 3, name: "Mary"},
+    {id: 4, name: "Pete"},
+];
+
+let user = usersCopy.find(user => user.id === 2);
+console.log(user);
+
+console.log(usersCopy.find(user => user.name.toUpperCase() === "JOHN"));
+
+// array.findIndex
+console.log(usersCopy.findIndex(item => item.name === "Mary"));
 
