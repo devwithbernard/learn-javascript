@@ -83,3 +83,13 @@ console.log(usersCopy.filter(user => user.name !== "Pete"));
 let filteredUsers = usersCopy.filter(user => user.id < 3);
 console.log(filteredUsers);
 
+// array.map
+numbers = [2, 7, 8, 9, 11];
+
+const doubleNumbers = numbers.map(number => number * 2);
+console.log(doubleNumbers);
+
+const names = ["John", "Sam", "Gill", "Mary"];
+
+const uppercaseNames = names.map(name => name.toUpperCase());
+console.log(uppercaseNames);
