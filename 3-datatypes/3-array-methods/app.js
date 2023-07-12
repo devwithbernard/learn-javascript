@@ -66,7 +66,7 @@ let usersCopy = [
     {id: 1, name: "John"},
     {id: 2, name: "Pete"},
     {id: 3, name: "Mary"},
-    {id: 4, name: "Pete"},
+    {id: 4, name: "Doe"},
 ];
 
 let user = usersCopy.find(user => user.id === 2);
@@ -76,4 +76,10 @@ console.log(usersCopy.find(user => user.name.toUpperCase() === "JOHN"));
 
 // array.findIndex
 console.log(usersCopy.findIndex(item => item.name === "Mary"));
+
+// array.filter
+console.log(usersCopy.filter(user => user.name !== "Pete"));
+
+let filteredUsers = usersCopy.filter(user => user.id < 3);
+console.log(filteredUsers);
 
