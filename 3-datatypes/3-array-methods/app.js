@@ -36,11 +36,28 @@ users.forEach((user, userIndex, users) => {
 })
 
 // Searching
-let nums = [1, 2, 3, 4, 5];
+let nums = [1, 2, 5];
 
 // array.indexOf
 let isFound = nums.indexOf(2, 0);
 
 isFound === -1 ? console.log(`2 is not in nums`) : console.log("2 is in nums");
 console.log(nums.indexOf(6)); // Not found
+
+// array.includes
+console.log(nums.includes(4));
+
+const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+setInterval(() => {
+    let min = Math.min(...nums);
+    let max = Math.max(...nums);
+    let randomInt = randomNumber(min, max);
+
+    if (nums.includes(randomInt)) {
+        console.log(`${randomInt} is in ${nums}`);
+    } else {
+        console.log("Oops!!! Not in.");
+    }
+}, 2000);
 
