@@ -15,5 +15,9 @@ console.log(slicedLetters);
 
 console.log(letters.slice(2,));
 
+// array.concat
+let arr = [1, 2];
 
-
+console.log(arr.concat([3, 4]));
+console.log([...arr].concat(3));
+console.log(arr.concat([3, 4], [5, 6]));
