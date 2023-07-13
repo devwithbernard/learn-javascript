@@ -93,3 +93,43 @@ const names = ["John", "Sam", "Gill", "Mary"];
 
 const uppercaseNames = names.map(name => name.toUpperCase());
 console.log(uppercaseNames);
+
+// array.sort
+let array = [1, 2, 15];
+
+array.sort();
+
+console.log(array); // [1,15,2]
+
+// Correct way to sort
+const compare = (a, b) => {
+    if (a > b) return 1;
+    if (a === b) return 0;
+    if (a < b) return -1;
+}
+
+array.sort(compare);
+console.log(array); // [1,2,15]
+
+const accounts = [{
+    id: 1,
+    name: "Jean",
+    balance: 3200
+}, {
+    id: 2,
+    name: "Mary",
+    balance: 2300
+}, {
+    id: 3,
+    name: "Doe",
+    balance: 4500
+}, {
+    id: 4,
+    name: "Mario",
+    balance: 985
+}];
+
+// sorted accounts array by balance order
+accounts.sort((accountA, accountB) => (accountA.balance - accountB.balance));
+console.log(accounts);
+
