@@ -153,3 +153,18 @@ console.log(idsValuesLetters);
 
 let joinLetters = lettersStr.join("-");
 console.log(joinLetters);
+
+// array.reduce, array.reduceRight
+
+const accountsCopy = [...accounts];
+
+const sumOfAccountBalances = accountsCopy.reduce((acc, account, index, array) => {
+    return index === array.length - 1 ? acc + account.balance + "$" : acc + account.balance;
+}, 0);
+console.log(sumOfAccountBalances);
+
+const reduceRightNames = accountsCopy.reduceRight((acc, account, index) => {
+    if (index === 0) return acc + account.name
+    return acc + account.name + ","
+}, '');
+console.log(reduceRightNames);
