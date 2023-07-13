@@ -133,3 +133,23 @@ const accounts = [{
 accounts.sort((accountA, accountB) => (accountA.balance - accountB.balance));
 console.log(accounts);
 
+// array.split, array.join
+const strNames = "Gill, Jack, Melinda";
+
+const arrayNames = strNames.split(",");
+console.log(arrayNames);
+
+for (let name of arrayNames) console.log(name);
+
+let string = "test";
+const lettersStr = string.split("");
+
+console.log(lettersStr);
+
+const idsValuesLetters = string.split('').map((char, id) => {
+    return {id, char}
+})
+console.log(idsValuesLetters);
+
+let joinLetters = lettersStr.join("-");
+console.log(joinLetters);
