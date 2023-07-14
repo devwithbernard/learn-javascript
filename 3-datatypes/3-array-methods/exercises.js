@@ -106,12 +106,12 @@ console.log(unique(strings));
 const groupById = (array) => {
     if (!Array.isArray(array)) return array;
 
-    const obj = {}
+    const obj = {};
 
     array.map(item => (
         obj[item.id] = {id: item.id, ...item}
-    ))
-    
+    ));
+
     return obj;
 }
 
